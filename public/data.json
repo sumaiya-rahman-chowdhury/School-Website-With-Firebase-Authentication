@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "category": "Science",
+      "name": "Physics",
+      "description": "Vibrant colors and stunning visuals create an immersive experience, captivating your senses and sparking curiosity.",
+      "credit": 4,
+      "cover_photo":"https://i.ibb.co/5sw8bbd/pexels-anete-lusina-4792255.jpg",
+      "ratings" : 5 
+    },
+    {
+      "id": 2,
+      "category": "Science",
+      "name": "Biology",
+      "description": "Discover a world of possibilities with innovative technology that simplifies your life and enhances your daily routines",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/YP0vWSP/pexels-shvets-production-7516391.jpg",
+      "ratings" : 4
+    },
+    {
+      "id": 3,
+      "category": "Science",
+      "name": "Chemistry",
+      "description": "Discover a world of possibilities with innovative technology that simplifies your life and enhances your daily routines",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/d7JJMTJ/pexels-monstera-production-6282012.jpg",
+      "ratings" : 2
+    },
+    {
+      "id": 4,
+      "category": "Science",
+      "name": "Mathematics",
+      "description": "Unwind in serene natural landscapes, where tranquility meets adventure, offering a perfect escape from the everyday hustle and bustle",
+      "credit": 4,
+      "cover_photo": "https://i.ibb.co/Lt9WJzB/pexels-andrea-piacquadio-3755511.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 5,
+      "category": "Arts",
+      "name": "Literature",
+      "description": "Elevate your culinary skills with delicious recipes that satisfy your cravings and turn every meal into a gourmet delight",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/Lt9WJzB/pexels-andrea-piacquadio-3755511.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 6,
+      "category": "Arts",
+      "name": "History",
+      "description": "Immerse yourself in captivating stories, where intriguing characters and unexpected twists keep you on the edge of your seat.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/qDJKW0F/pexels-monstera-production-6281879.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 7,
+      "category": "Arts",
+      "name": "Music",
+      "description": "Stay connected with seamless communication tools that bridge distances and bring loved ones closer, no matter where you are.",
+      "credit": 2,
+      "cover_photo": "https://i.ibb.co/5sw8bbd/pexels-anete-lusina-4792255.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 8,
+      "category": "Arts",
+      "name": "Visual Arts",
+      "description": "Achieve your fitness goals with tailored workouts and expert guidance, empowering you to be your healthiest and happiest self..",
+      "credit": 2,
+      "cover_photo": "https://i.ibb.co/Lt9WJzB/pexels-andrea-piacquadio-3755511.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 9,
+      "category": "Commerce",
+      "name": "Economics",
+      "description": "Explore diverse cultures and traditions, broadening your horizons and fostering a deeper appreciation for our global community.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/YP0vWSP/pexels-shvets-production-7516391.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 10,
+      "category": "Commerce",
+      "name": "Business Administration",
+      "description": "Enhance productivity and organization with intuitive tools designed to streamline tasks and boost efficiency in your daily workflow",
+      "credit": 4,
+      "cover_photo": "https://i.ibb.co/qDJKW0F/pexels-monstera-production-6281879.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 11,
+      "category": "Commerce",
+      "name": "Accounting",
+      "description": "Ignite your creativity and unlock your artistic potential, allowing your imagination to flourish and express your unique vision",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/5sw8bbd/pexels-anete-lusina-4792255.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 12,
+      "category": "Commerce",
+      "name": "Marketing",
+      "description": "Nourish your mind and body with wholesome recipes and wellness tips that promote a balanced and fulfilling lifestyle.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/qDJKW0F/pexels-monstera-production-6281879.jpg","ratings" : 5 
+    },
+    {
+      "id": 13,
+      "category": "Science",
+      "name": "Computer Science",
+      "description": "Navigate the digital world with confidence, mastering essential skills that empower you to thrive in a tech-driven society",
+      "credit": 4,
+      "cover_photo": "https://i.ibb.co/Lt9WJzB/pexels-andrea-piacquadio-3755511.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 14,
+      "category": "Arts",
+      "name": "Drama",
+      "description": "Transform your living space into a haven of comfort and style, reflecting your personality and providing a sense of sanctuary..",
+      "credit": 2,
+      "cover_photo": "https://i.ibb.co/Lt9WJzB/pexels-andrea-piacquadio-3755511.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 15,
+      "category": "Commerce",
+      "name": "Finance",
+      "description": "Experience the thrill of adventure and the joy of discovery, as you embark on unforgettable journeys to new horizons.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/YP0vWSP/pexels-shvets-production-7516391.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 16,
+      "category": "Science",
+      "name": "Environmental Science",
+      "description": "Cultivate mindfulness and inner peace through mindfulness practices that bring serenity and clarity to your daily life.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/qDJKW0F/pexels-monstera-production-6281879.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 17,
+      "category": "Arts",
+      "name": "Psychology",
+      "description": "Unleash your inner explorer, as you embark on daring expeditions and unforgettable escapades in the great outdoors.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/Lt9WJzB/pexels-andrea-piacquadio-3755511.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 18,
+      "category": "Science",
+      "name": "Geology",
+      "description": "Celebrate diversity and inclusivity, championing equality and fostering a more compassionate and equitable world.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/qDJKW0F/pexels-monstera-production-6281879.jpg"
+      ,"ratings" : 5 
+    },
+    {
+      "id": 19,
+      "category": "Arts",
+      "name": "Sociology",
+      "description": "Embrace sustainable living and eco-friendly practices, making conscious choices that benefit the planet and future generations",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/LrCCjp8/kimberly-farmer-l-Uaa-KCUANVI-unsplash.jpg"
+      ,"ratings" : 4.5
+    },
+    {
+      "id": 20,
+      "category": "Commerce",
+      "name": "Human Resource Management",
+      "description": "Cherish cherished moments and create lasting memories with loved ones, savoring the bonds that bring joy and fulfillment.",
+      "credit": 3,
+      "cover_photo": "https://i.ibb.co/s1k21Zm/brooke-cagle-g1-Kr4-Ozfoac-unsplash.jpg"
+      ,"ratings" : 3.5
+    }
+  ]
+  
