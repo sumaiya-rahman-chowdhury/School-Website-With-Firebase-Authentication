@@ -6,7 +6,8 @@ import NoCatFound from "./NoCatFound";
 
 const CourseListing = ({catagory}) => {
     const {allDatas} = useContext(AllContext)
-    const [alldata,setData] = useState([])
+    console.log(allDatas)
+    const [alldata,setData] = useState(allDatas)
 
     useEffect(()=>{
         if(catagory){
@@ -17,7 +18,8 @@ const CourseListing = ({catagory}) => {
         setData(allDatas)
        }
     },[allDatas,catagory])
-    // console.log(alldata)
+    
+    console.log(alldata)
     console.log(catagory)
 
     return (

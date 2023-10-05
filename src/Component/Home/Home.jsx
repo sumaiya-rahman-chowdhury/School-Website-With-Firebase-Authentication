@@ -16,7 +16,9 @@ const Home = () => {
           <Context>
           <Banner handleFormData={handleFormData}></Banner>
           <div className=" max-w-[1280px] mx-auto">
-          <CourseListing catagory={catagory}></CourseListing>
+          {
+            <CourseListing catagory={catagory}></CourseListing>
+          }
           </div>
           </Context>
         </div>

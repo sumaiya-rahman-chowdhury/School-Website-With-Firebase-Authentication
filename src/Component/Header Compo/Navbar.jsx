@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 const Navbar = () => {
 
     const navItems = <>
@@ -24,20 +24,22 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                        <div className=" space-x-5">
-                       <button
+                      <Link to='/login'> <button
                             className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block rounded-none"
                             type="button"
                             data-ripple-light="true"
                         >
                             <span>Login</span>
-                        </button>
-                        <button
+                        </button></Link>
+                       <Link to='/registratio'>
+                       <button
                             className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
                             type="button"
                             data-ripple-light="true"
                         >
                             <span>Registration</span>
                         </button>
+                       </Link>
                        </div>
 
 
