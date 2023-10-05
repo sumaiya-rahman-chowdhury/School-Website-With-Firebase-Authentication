@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink,Link } from "react-router-dom";
+import { AuthenticationProvider } from "../Context/Authentication";
 const Navbar = () => {
-
+    const {user,logOut} = useContext(AuthenticationProvider)
+    console.log(user)
     const navItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/'>Courses</NavLink></li>
     </>
+
+    const handleLogOut = () =>{
+        logOut().then(()=>{
+            alert("Log Out")
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+    }
     const [show, setShow] = useState(true)
     console.log(show)
     return (
@@ -24,29 +35,49 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                        <div className=" space-x-5">
-                      <Link to='/login'> <button
-                            className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block rounded-none"
-                            type="button"
-                            data-ripple-light="true"
-                        >
-                            <span>Login</span>
-                        </button></Link>
-                       <Link to='/registratio'>
-                       <button
-                            className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-                            type="button"
-                            data-ripple-light="true"
-                        >
-                            <span>Registration</span>
-                        </button>
-                       </Link>
+                      {
+                        user?"":<Link to='/login'> <button
+                        className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block rounded-none"
+                        type="button"
+                        data-ripple-light="true"
+                    >
+                        <span>Login</span>
+                    </button></Link>
+                      }
+                    {
+                        user?"":   <Link to='/registration'>
+                        <button
+                             className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+                             type="button"
+                             data-ripple-light="true"
+                         >
+                             <span>Registration</span>
+                         </button>
+                        </Link>
+                    }
+                    {
+                        user? <Link to='/profile'>
+                        <button
+                             className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+                             type="button"
+                             data-ripple-light="true"
+                         >
+                             <span>Profile</span>
+                         </button>
+                        </Link>:""
+                    }
+                    {
+                        user? <Link to='/'>
+                        <button
+                             className="middle none center hidden  bg-gradient-to-tr from-gray-400 to-gray-300 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+                             type="button"
+                             data-ripple-light="true" onClick={handleLogOut}
+                         >
+                             <span>Logout</span>
+                         </button>
+                        </Link>:""
+                    }
                        </div>
-
-
-
-
-
-
                         <button
                             className="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
                             data-collapse-target="navbar"

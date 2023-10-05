@@ -21,7 +21,7 @@ const CardDetails = () => {
         <div className=" flex justify-center items-center h-auto">
             <div className="relative flex w-full lg:p-20 flex-col  bg-white bg-clip-border text-gray-700  ">
                 <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
+                    <img className=" h-[80vh] w-full"
                         src={data?.cover_photo}
                         alt="ui/ux review check"
                     />
