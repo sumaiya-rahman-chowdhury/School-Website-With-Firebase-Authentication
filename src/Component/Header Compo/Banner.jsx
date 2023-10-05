@@ -1,7 +1,7 @@
 import  { useContext } from 'react';
 import { AllContext } from '../Context/Context';
 
-const Banner = () => {
+const Banner = ({handleFormData}) => {
 
     const {allDatas} = useContext(AllContext)
     // console.log(allDatas)
@@ -13,8 +13,8 @@ const Banner = () => {
             </div> */}
             <div className=' flex justify-center items-center h-full flex-col gap-y-10'>
             <h1 className=' text-white font-bold lg:text-6xl md:text-4xl text-2xl text-center'>Your Path to Knowledge Begins Here</h1>
-               <form action="">
-               <input type="text" placeholder='Art, Commerce or Science' className=' px-8 py-3 outline-pink-500/20 '/>
+               <form action="" onSubmit={handleFormData}>
+               <input type="text" name='name' placeholder='Arts, Commerce or Science' className=' px-8 py-3 outline-pink-500/20 '/>
                 <button type='submit'  className=' px-8 py-3 bg-gradient-to-tr from-gray-400 to-gray-300 shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] font-bold uppercase'>Search</button>
                </form>
             </div>

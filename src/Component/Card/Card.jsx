@@ -1,7 +1,7 @@
 
 const Card = ({data}) => {
 
-    console.log(data)
+    // console.log(data)
 
     return (
         <div>
@@ -16,7 +16,7 @@ const Card = ({data}) => {
     <h4 className="block font-sans font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
      {data?.name}
     </h4>
-    <p className="mt-3 block font-sans  font-normal leading-relaxed text-gray-700 antialiased">
+    <p className="mt-3 block font-sans text-[14px]  font-normal leading-relaxed text-gray-700 antialiased">
       {data?.description?.slice(0,50)}
     </p>
   </div>
